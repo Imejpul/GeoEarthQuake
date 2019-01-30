@@ -7,10 +7,23 @@
 //
 
 import UIKit
+import CodableGeoJSON
 
 class ListaTableViewController: UITableViewController {
     
     var listaTerremotos = ["a", "b", "c"]
+    
+    //propiedades terremoto
+    struct LocationProperties: Codable {
+        let magnitud: Decimal
+        let place: String
+        let time: Int64
+        let titulo: String
+    }
+    
+    typealias LocationFeatureCollection = GeoJSONFeatureCollection<PointGeometry, LocationProperties>;<#type expression#>
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

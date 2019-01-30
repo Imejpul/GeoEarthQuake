@@ -6,5 +6,7 @@ target 'GeoEarthQuake' do
   use_frameworks!
 
   # Pods for GeoEarthQuake
+  pod 'CodableGeoJSON'
+  pod 'Alamofire'
 
 end
