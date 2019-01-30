@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mxn-zo-E6k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gwm-R6-h41">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Lista Table View Controller-->
         <scene sceneID="PGP-zv-w5N">
             <objects>
                 <tableViewController id="fCu-0J-mVQ" customClass="ListaTableViewController" customModule="GeoEarthQuake" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,14 +26,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIB-Gt-EEw">
-                                            <rect key="frame" x="329" y="11" width="30" height="22"/>
-                                            <state key="normal" title="Ver"/>
-                                            <connections>
-                                                <action selector="botonVerPulsado:" destination="Bx0-UG-4XX" eventType="touchUpInside" id="GHs-tv-pYB"/>
-                                                <segue destination="FNI-IT-nl2" kind="show" id="kz8-TH-egQ"/>
-                                            </connections>
-                                        </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFi-A6-Vvl">
                                             <rect key="frame" x="16" y="11" width="42" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -42,17 +34,14 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="GIB-Gt-EEw" firstAttribute="trailing" secondItem="2kf-xU-btW" secondAttribute="trailingMargin" id="5EY-LJ-LKN"/>
-                                        <constraint firstItem="GIB-Gt-EEw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sFi-A6-Vvl" secondAttribute="trailing" id="He0-Uk-HCH"/>
                                         <constraint firstItem="sFi-A6-Vvl" firstAttribute="top" secondItem="2kf-xU-btW" secondAttribute="topMargin" id="QZc-Rr-xF6"/>
-                                        <constraint firstItem="GIB-Gt-EEw" firstAttribute="top" secondItem="2kf-xU-btW" secondAttribute="topMargin" id="SFy-9A-3pJ"/>
-                                        <constraint firstItem="GIB-Gt-EEw" firstAttribute="bottom" secondItem="2kf-xU-btW" secondAttribute="bottomMargin" id="dMW-Px-E4k"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="sFi-A6-Vvl" secondAttribute="bottom" id="gEO-hQ-khP"/>
                                         <constraint firstItem="sFi-A6-Vvl" firstAttribute="leading" secondItem="2kf-xU-btW" secondAttribute="leadingMargin" id="nYb-Zf-Cbx"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="tituloTerremoto" destination="sFi-A6-Vvl" id="SWd-An-X1S"/>
+                                    <segue destination="FNI-IT-nl2" kind="show" id="rA4-Ys-FG5"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -61,21 +50,22 @@
                             <outlet property="delegate" destination="fCu-0J-mVQ" id="c7o-hS-h00"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="G98-mc-ueM"/>
                     <toolbarItems>
-                        <barButtonItem title="Item" id="X9T-32-SXH"/>
-                        <barButtonItem title="Item" id="cyK-7G-hkJ"/>
-                        <barButtonItem title="Item" id="gAb-xD-QRR"/>
-                        <barButtonItem title="Item" id="xqr-XS-yNm"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="9iB-Ec-Rlw"/>
+                        <barButtonItem title="Hora" id="JNC-Oo-L4Z"/>
+                        <barButtonItem title="Día" id="Vbz-pf-fZl"/>
+                        <barButtonItem title="7 Días" id="Pu3-nE-bsw"/>
+                        <barButtonItem title="30 Días" id="Ndw-gT-j2A"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="wZa-BM-erw"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="ozg-Te-X9r">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="LnU-rj-Qap"/>
+                        <barButtonItem key="rightBarButtonItem" title="All in map" id="LnU-rj-Qap"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wuu-vJ-8y4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2017" y="134"/>
+            <point key="canvasLocation" x="2956" y="133.5832083958021"/>
         </scene>
         <!--Info Earth Quake View Controller-->
         <scene sceneID="p3h-SB-Oqo">
@@ -85,9 +75,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="W9b-09-29C">
-                                <rect key="frame" x="16" y="75" width="42" height="77.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="W9b-09-29C">
+                                <rect key="frame" x="166.5" y="75" width="42" height="77.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZ0-Nz-bbC">
                                         <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
@@ -109,9 +98,8 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zsw-hX-0Dc">
-                                <rect key="frame" x="16" y="162" width="42" height="134.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zsw-hX-0Dc">
+                                <rect key="frame" x="166.5" y="162" width="42" height="134.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kms-Gr-viT">
                                         <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
@@ -144,52 +132,49 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Kms-Gr-viT" firstAttribute="top" secondItem="Zsw-hX-0Dc" secondAttribute="top" id="F9l-de-SfZ"/>
+                                    <constraint firstItem="Kms-Gr-viT" firstAttribute="leading" secondItem="Zsw-hX-0Dc" secondAttribute="leading" id="k3E-UV-Whw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kms-Gr-viT" secondAttribute="trailing" id="zbR-67-c2A"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W9b-09-29C" firstAttribute="centerX" secondItem="KTz-d0-ZpZ" secondAttribute="centerX" id="aXV-pB-aLC"/>
+                            <constraint firstItem="Zsw-hX-0Dc" firstAttribute="top" secondItem="W9b-09-29C" secondAttribute="bottom" constant="10" id="rA9-3V-Mza"/>
+                            <constraint firstItem="Zsw-hX-0Dc" firstAttribute="centerX" secondItem="KTz-d0-ZpZ" secondAttribute="centerX" id="rBd-Qk-YT3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Mpx-U5-VcQ"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OqA-BQ-DUP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2855" y="134"/>
+            <point key="canvasLocation" x="3792.8000000000002" y="133.5832083958021"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="eJJ-hR-1Oi">
+        <!--Item-->
+        <scene sceneID="yJf-no-DRs">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mxn-zo-E6k" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="Gwm-R6-h41" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="G98-mc-ueM"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3sK-vf-0rb">
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cod-IA-ZsR">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9E7-Wc-bON">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
-                        <segue destination="Q9y-yd-DLa" kind="relationship" relationship="rootViewController" id="gGO-hv-XsK"/>
+                        <segue destination="fCu-0J-mVQ" kind="relationship" relationship="rootViewController" id="6BN-bN-Flc"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y3d-rw-D2U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YcN-lo-i6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245.59999999999999" y="133.5832083958021"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="g9z-Ls-xOW">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Q9y-yd-DLa" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="3MC-70-bXb"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nFf-Xb-wfU">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="fCu-0J-mVQ" kind="relationship" relationship="viewControllers" id="iOw-Ub-PqO"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EIR-KB-9gb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1184.8" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2016.8" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

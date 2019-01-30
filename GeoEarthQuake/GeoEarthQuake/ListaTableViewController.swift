@@ -7,19 +7,66 @@
 //
 
 import UIKit
-import CodableGeoJSON
 import Alamofire
+import SwiftyJSON
 
 class ListaTableViewController: UITableViewController {
     
     let urlHora = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"
     
-    var listaTerremotos = ["a", "b", "c"]
+    struct Terremoto {
+        var magnitud: Decimal
+        var sitio: String
+        var fechaHora: Int64
+        var titulo: String
+        var longitud: Decimal
+        var latitud: Decimal
+        var profundidad: Decimal
+    }
+    
+    var listaTerremotosTest = ["a", "b", "c"]
+    /*var terremotos = [Terremoto(magnitud: <#T##Decimal#>, sitio: <#T##String#>, fechaHora: <#T##Int64#>, titulo: <#T##String#>, longitud: <#T##Decimal#>, latitud: <#T##Decimal#>, profundidad: <#T##Decimal#>)]*/
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //descarga GeoJSON Terremotos (todos) de la última hora
+        
+        
+        Alamofire.request(urlHora, method: .get).validate().responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                
+                //recorremos el json
+                print("JSON: \(json)")
+                print("---------------------")
+                
+                let features = json["features"].count
+                
+                for valor in 0..<features{
+                    //controlar que no sea null -> json["features"][valor]["properties"]["place"]
+                   
+                    let place = json["features"][valor]["properties"]["place"]
+                    print(valor)
+                    print(place)
+                    
+                    
+                }
+                //asignamos valores a struct y guardamos en lista
+                
+                /*testeo
+                print("JSON: \(json)")
+                print("--------------")
+                print(json[][0]["properties"]["place"])
+                print(json["features"].count)
+                //print(json["features"][indexPath.row]["properties"]["place"])
+                */
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
+        /*//descarga GeoJSON Terremotos (todos) de la última hora
         Alamofire.request(urlHora)
             .responseData { response in
                 if let data = response.data {
@@ -44,7 +91,7 @@ class ListaTableViewController: UITableViewController {
                     
                 }
             
-        }
+        }*/
         
 
         // Uncomment the following line to preserve selection between presentations
@@ -63,7 +110,7 @@ class ListaTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return listaTerremotos.count
+        return listaTerremotosTest.count
     }
 
     
@@ -71,7 +118,7 @@ class ListaTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaTerremoto", for: indexPath) as! EarthQuakeTableViewCell
         
-            cell.tituloTerremoto.text = listaTerremotos[indexPath.row]
+            cell.tituloTerremoto.text = listaTerremotosTest[indexPath.row]
 
         // Configure the cell...
 
