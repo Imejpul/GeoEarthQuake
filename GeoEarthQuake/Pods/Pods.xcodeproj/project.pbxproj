@@ -7,53 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		059D92B7BBFBEC53E9A3B6E11C5C3B3A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8952F318F1905E2C221B9F0244A37411 /* Response.swift */; };
-		0A39AF55285A3A4F7CBABB6D822FA4A3 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1701B28643DF9921C4BD89497B2DF48 /* Alamofire.swift */; };
-		1D29D2ACADF961F69D32B06FA6A09E28 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C175D576FF8D8B210E90ECDB24BA47B1 /* Notifications.swift */; };
-		2AA482803932774013C9F3BE0555AC46 /* GeoJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D895DE70405CE1394B89210896890E /* GeoJSON.swift */; };
-		355C18EEC82624A06A6CC93965258E33 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C046CE84E159820866C0C3F7EE6C783 /* Request.swift */; };
-		35A81B1C1297C2FEA13648D48095381D /* GeoJSONGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86883FCB42433388D6294D280F9CC511 /* GeoJSONGeometry.swift */; };
+		059D92B7BBFBEC53E9A3B6E11C5C3B3A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B2F2DC40966A984B9D879851C08A76 /* Response.swift */; };
+		079DAD319447D149D49B1B569C44E874 /* Pods-GeoEarthQuake-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D88F2A9EF45C5B9D7D2398CC93FF7A79 /* Pods-GeoEarthQuake-dummy.m */; };
+		0A39AF55285A3A4F7CBABB6D822FA4A3 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B81F6538E5D3C42F48AA81A53CA6DB2F /* Alamofire.swift */; };
+		0CCB12136F51AC5FDDE9028609CE1CB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31A678D18920C8C92531EA5CFDB65A /* Foundation.framework */; };
+		147E09E1769F43D10FC7E4ADEC3BE361 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31A678D18920C8C92531EA5CFDB65A /* Foundation.framework */; };
+		1D29D2ACADF961F69D32B06FA6A09E28 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFDDCD04420C40FBD04D43823B6E0C4 /* Notifications.swift */; };
+		2AA482803932774013C9F3BE0555AC46 /* GeoJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E33E2928902E8571EDBD51D4B92EFB /* GeoJSON.swift */; };
+		355C18EEC82624A06A6CC93965258E33 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50F0382C540238E31F8F1A947A60B92 /* Request.swift */; };
+		35A81B1C1297C2FEA13648D48095381D /* GeoJSONGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9102AE95F48A963B4F440765471FD17 /* GeoJSONGeometry.swift */; };
 		3BD1DAFE1F3E6C9E4EB0F2099B6D6FA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31A678D18920C8C92531EA5CFDB65A /* Foundation.framework */; };
-		3E0749AF6C51BCF0E4A41CF1D6A76FED /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD01FA715D150590430C6A8E36E2C37 /* DispatchQueue+Alamofire.swift */; };
-		50E64D0492DF1EB90E650E4AC5FE5B1F /* Pods-GeoEarthQuake-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D88F2A9EF45C5B9D7D2398CC93FF7A79 /* Pods-GeoEarthQuake-dummy.m */; };
-		548056BA3BF2F1A5F60868E54F681661 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31A678D18920C8C92531EA5CFDB65A /* Foundation.framework */; };
-		60B6C2A003864AAD3A426448152F67BE /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1433EAECA52DE49415685AB224D3DD73 /* Timeline.swift */; };
-		6EFD003458AE7F689DEA720A2030C261 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880A90BEC6143B3BB403039252E7A5E /* ResponseSerialization.swift */; };
-		700D3D95AF9520CB227846DFD943A2DA /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D4BDFF3CC7BF7051912B1C8547A475 /* ParameterEncoding.swift */; };
-		73AB05789A4982944AF68DBD013E3EB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D7763B888CAC09A8A8D2365F1F5126 /* NetworkReachabilityManager.swift */; };
-		772911DA6E33D1CBBC30131B7C8BDBB3 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59700E0530E51E8ACC6147691C98CC00 /* Alamofire-dummy.m */; };
-		77E8F0EB9FFBE2E3EB0C77095C644606 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD055954B9D5B4649B1B8D85785D678 /* TaskDelegate.swift */; };
-		7B08400656C6CF546FF4378E77D90B31 /* GeoJSONPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F37B74CED5BB7FF88928DBFB3D3DEF /* GeoJSONPosition.swift */; };
-		7E3538A6992A38276764936A9733493D /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CFA39DB92F3BF0F05019E66F65ACA4 /* AFError.swift */; };
+		3E0749AF6C51BCF0E4A41CF1D6A76FED /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A4E5425FFBE796F9D96D0EDC1EF31 /* DispatchQueue+Alamofire.swift */; };
+		60B6C2A003864AAD3A426448152F67BE /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6D769F15AB1358E646994C5BA1F14A /* Timeline.swift */; };
+		6EFD003458AE7F689DEA720A2030C261 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACAD4622D6926D2AF2ED6A72862D90 /* ResponseSerialization.swift */; };
+		700D3D95AF9520CB227846DFD943A2DA /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D7F890E08C6C75EDDFE2AFDE8E4C8 /* ParameterEncoding.swift */; };
+		73AB05789A4982944AF68DBD013E3EB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034F6FE7CC00FF26D81F541150D5E200 /* NetworkReachabilityManager.swift */; };
+		772911DA6E33D1CBBC30131B7C8BDBB3 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37C7A412B5BCD99E60909C6E7D7E1331 /* Alamofire-dummy.m */; };
+		77E8F0EB9FFBE2E3EB0C77095C644606 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E1CA4E022E8C574EAFCB1EBBCABD9D /* TaskDelegate.swift */; };
+		7B08400656C6CF546FF4378E77D90B31 /* GeoJSONPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE854D2BAE01DEE911E742F380FC54D1 /* GeoJSONPosition.swift */; };
+		7E3538A6992A38276764936A9733493D /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2526763B2F6AE64B35186BFBD3E7C613 /* AFError.swift */; };
 		8B954EC8BC842D1A462F984B32CAEE8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31A678D18920C8C92531EA5CFDB65A /* Foundation.framework */; };
-		8D2A6A90A6DDAF75EA52D471258545CC /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7557D9ECFEA1FE60A8D56913ED1DA558 /* ServerTrustPolicy.swift */; };
-		9469BD49D2CA41CDD4F170FAB3C3625C /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE182499CF9AB4F092E5DB46695EB675 /* JSON.swift */; };
-		A1EC41966B261DCE460BCDE5124A1DBE /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CAACA508FBB27CC75FA5F9E3690702 /* SessionDelegate.swift */; };
+		8D2A6A90A6DDAF75EA52D471258545CC /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDEA88994C14CC70570EE8560C33E00 /* ServerTrustPolicy.swift */; };
+		9469BD49D2CA41CDD4F170FAB3C3625C /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE06EA46AAF41B28329526303E96E2E /* JSON.swift */; };
+		A1EC41966B261DCE460BCDE5124A1DBE /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC391D28FBF6527DB48F3F3DEE5B7AB3 /* SessionDelegate.swift */; };
 		A7A270836C7E4A51778A531552829F95 /* CodableJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02FB88840A1B125846DC28ECDC135D6A /* CodableJSON.framework */; };
-		AA56769D8733D3F3E7976742D5ABA998 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D01C6BE759171B7B9FD8147A9AC70A /* Validation.swift */; };
-		AEA829AB1A8AF2AD077A808AED6B178A /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31796A1A89EC90DBB85B713DAA03479C /* MultipartFormData.swift */; };
-		B4AADA0FA33798439838955B89C20872 /* GeoJSONFeatureIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EA1241EB66E474751898A5E2E4CE11 /* GeoJSONFeatureIdentifier.swift */; };
-		B6F6E4CC26451E91B59FAE0F6841DC1F /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0FC20DB599893C5B2361EB0D7D2AE2 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA56769D8733D3F3E7976742D5ABA998 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA11A99DA5EE98DACC01DE8D76EFEB0 /* Validation.swift */; };
+		AEA829AB1A8AF2AD077A808AED6B178A /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6308D13DE0D34B3B5D991C1239031539 /* MultipartFormData.swift */; };
+		B262B33D0BAB5BD5F1207A6314F59EE5 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8837280073AB6FFDF259951BB5579F5 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4AADA0FA33798439838955B89C20872 /* GeoJSONFeatureIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BFD3193F46A24F7DBF681973C9CBC7 /* GeoJSONFeatureIdentifier.swift */; };
+		B6F6E4CC26451E91B59FAE0F6841DC1F /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0075009596660F5A51BBB44A5D2CB81 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEF7F319291A40B8B232279178201947 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A31A678D18920C8C92531EA5CFDB65A /* Foundation.framework */; };
-		D3FA0AA634AAEA99AB3FABC36BB4958C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB6FA11823E3E417B4BBC2E38D749E1 /* SessionManager.swift */; };
-		D49B639DA339ED285DE9620665FE3A1D /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316EA6BCC1521D58CFF37992129CC68 /* JSON.swift */; };
-		DCB95484A52999507E67696B26F7CEEC /* GeoJSONFeatureCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C8531A43753FE5F230903D1B1BC31F /* GeoJSONFeatureCollection.swift */; };
-		E31D59EF1272CB2B725F954D491C7854 /* GeoJSONFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEBB33CAB6841F767FDE1881DD64FFC /* GeoJSONFeature.swift */; };
-		E723C0791207A9C7F9BDEEA8EFD2F526 /* CodableJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EE2F9CF8C46E0770804ED1660878E37 /* CodableJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E7B1F63539CCB227582B3282A5AF726E /* CodableGeoJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85C048D96E3AF8972B4C237867EEA18A /* CodableGeoJSON-dummy.m */; };
-		E8ADFAB23E637AF52FC742C947156A9D /* CodableJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B24A3EC1EB0CBFA26D3C124CB9E45722 /* CodableJSON-dummy.m */; };
-		EB0DD8CEA1A69867A30267439C970440 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553DD33D14D3488D3008962BB94E16BA /* Result.swift */; };
-		EBE9E0B05DF478A17F00FFB71CC183F2 /* CodableGeoJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C417D40DFD97BA8D3F6F15071981178 /* CodableGeoJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE2BBDA460C52946753A8E4BFA3F7363 /* Pods-GeoEarthQuake-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 156482090B8D9456ECDAEAD614104EEA /* Pods-GeoEarthQuake-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6474FD546D80C827560D066AE07F96B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A18B474500CA7B7A3EDA404976D5E /* SwiftyJSON.swift */; };
+		D3FA0AA634AAEA99AB3FABC36BB4958C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB8F84E7920451C66E9595075C0B43F /* SessionManager.swift */; };
+		D49B639DA339ED285DE9620665FE3A1D /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2BD8F129A4890A04291DFE5BDFFDB4 /* JSON.swift */; };
+		DCB95484A52999507E67696B26F7CEEC /* GeoJSONFeatureCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189DAE6D73EEAE95D9407E383CD86D39 /* GeoJSONFeatureCollection.swift */; };
+		E1B5678EC779B7A30C8197939642AF34 /* Pods-GeoEarthQuake-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 156482090B8D9456ECDAEAD614104EEA /* Pods-GeoEarthQuake-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E31D59EF1272CB2B725F954D491C7854 /* GeoJSONFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA7CAB6DA7C697709A71ADDC577F4FA /* GeoJSONFeature.swift */; };
+		E723C0791207A9C7F9BDEEA8EFD2F526 /* CodableJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0028A2E6A48927008F20BF9221F5023 /* CodableJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7B1F63539CCB227582B3282A5AF726E /* CodableGeoJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3323CD8D87E54F091B7925DCD2C3DA3F /* CodableGeoJSON-dummy.m */; };
+		E8ADFAB23E637AF52FC742C947156A9D /* CodableJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF2182A618CBDE31A9AC4A4FECACF31 /* CodableJSON-dummy.m */; };
+		EB0DD8CEA1A69867A30267439C970440 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD95E2B0801E276C8938B5316F4E2B /* Result.swift */; };
+		EBE9E0B05DF478A17F00FFB71CC183F2 /* CodableGeoJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 307B18170CACA31B514CBA60368936AA /* CodableGeoJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5BF173D3B75F1AEBDD9C4D602512BB1 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5F0EF95EC7C94F9F863E55709D2C55 /* SwiftyJSON-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2BDDF3346EB164899803C492B16A319A /* PBXContainerItemProxy */ = {
+		32891D60D42725FF6EC2430BBD6E17C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A15A1D9E06E1E684D6C03BD58E6ABF55;
 			remoteInfo = CodableGeoJSON;
+		};
+		3AE0A7A3BE35339C8A30CD5AFB19ED43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19E7673C9E4346838CEAEECAA348FB8D;
+			remoteInfo = CodableJSON;
 		};
 		479086E04EC9A0CB08F230F1FD8B198A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -62,83 +73,91 @@
 			remoteGlobalIDString = 19E7673C9E4346838CEAEECAA348FB8D;
 			remoteInfo = CodableJSON;
 		};
-		69630FF00CE79FAD4410CF996B57DFAA /* PBXContainerItemProxy */ = {
+		485D0299685904F878FCA77E68AD9E70 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3383968E74B5371B20BB519B170DC7FD;
 			remoteInfo = Alamofire;
 		};
-		B410000EE5402D72A87B3D231B0CCED3 /* PBXContainerItemProxy */ = {
+		DEB25907F25580401EB49EADDAB17141 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 19E7673C9E4346838CEAEECAA348FB8D;
-			remoteInfo = CodableJSON;
+			remoteGlobalIDString = 834D9AD34BB6829F398FEFE056A0D83C;
+			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02FB88840A1B125846DC28ECDC135D6A /* CodableJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodableJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C0FC20DB599893C5B2361EB0D7D2AE2 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		0F1969B114A1ECBF0F205EFC83AE2E52 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		1433EAECA52DE49415685AB224D3DD73 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		034F6FE7CC00FF26D81F541150D5E200 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		047D72517F22CB052F84F296AD3FCF97 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		13E1CA4E022E8C574EAFCB1EBBCABD9D /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		156482090B8D9456ECDAEAD614104EEA /* Pods-GeoEarthQuake-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GeoEarthQuake-umbrella.h"; sourceTree = "<group>"; };
-		1880A90BEC6143B3BB403039252E7A5E /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		1668C71C92AC78E75317A8DDBB9C1DFB /* Pods_GeoEarthQuake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GeoEarthQuake.framework; path = "Pods-GeoEarthQuake.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		189DAE6D73EEAE95D9407E383CD86D39 /* GeoJSONFeatureCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoJSONFeatureCollection.swift; path = CodableGeoJSON/GeoJSONFeatureCollection.swift; sourceTree = "<group>"; };
+		1CCF6A2588E02F2E52BE95A42A16369D /* CodableGeoJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CodableGeoJSON.framework; path = CodableGeoJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		279093FDE8D066ACC5956DD21FB9610F /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		28D4BDFF3CC7BF7051912B1C8547A475 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
-		2EB6FA11823E3E417B4BBC2E38D749E1 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
-		31796A1A89EC90DBB85B713DAA03479C /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		35E876718B071C5DD7FAB96B9669E37B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36CFA39DB92F3BF0F05019E66F65ACA4 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		36F37B74CED5BB7FF88928DBFB3D3DEF /* GeoJSONPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoJSONPosition.swift; path = CodableGeoJSON/GeoJSONPosition.swift; sourceTree = "<group>"; };
-		3C417D40DFD97BA8D3F6F15071981178 /* CodableGeoJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableGeoJSON-umbrella.h"; sourceTree = "<group>"; };
+		2526763B2F6AE64B35186BFBD3E7C613 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		294272A7885612DF2B421EE539EAAF6B /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		2FA11A99DA5EE98DACC01DE8D76EFEB0 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		307B18170CACA31B514CBA60368936AA /* CodableGeoJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableGeoJSON-umbrella.h"; sourceTree = "<group>"; };
+		3323CD8D87E54F091B7925DCD2C3DA3F /* CodableGeoJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodableGeoJSON-dummy.m"; sourceTree = "<group>"; };
+		35657F47E069651034AB5E8CFD54A77A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37331CF282D7403163A758D9CFA98829 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		377A4E5425FFBE796F9D96D0EDC1EF31 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		37C7A412B5BCD99E60909C6E7D7E1331 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		3AA7CAB6DA7C697709A71ADDC577F4FA /* GeoJSONFeature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoJSONFeature.swift; path = CodableGeoJSON/GeoJSONFeature.swift; sourceTree = "<group>"; };
+		3AE06EA46AAF41B28329526303E96E2E /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = CodableJSON/JSON.swift; sourceTree = "<group>"; };
 		3C8ED40527399EEF9862983FFF19038B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44826A7E9B9C11B59518E67EDD76009B /* CodableJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CodableJSON.framework; path = CodableJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		48392FD51AB2A9C5E74BD50FCAC463AC /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		49C8531A43753FE5F230903D1B1BC31F /* GeoJSONFeatureCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoJSONFeatureCollection.swift; path = CodableGeoJSON/GeoJSONFeatureCollection.swift; sourceTree = "<group>"; };
-		4AD01FA715D150590430C6A8E36E2C37 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		553DD33D14D3488D3008962BB94E16BA /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		567CC7DFE7F2CA60C4588EC22D7719F8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59700E0530E51E8ACC6147691C98CC00 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		5A9797BE756B3F914E63E893B77EE56A /* CodableJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CodableJSON.modulemap; sourceTree = "<group>"; };
-		5C046CE84E159820866C0C3F7EE6C783 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		5EE2F9CF8C46E0770804ED1660878E37 /* CodableJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableJSON-umbrella.h"; sourceTree = "<group>"; };
+		3FAB76F4B6529F51741829A5F7F6DD4C /* CodableJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CodableJSON.modulemap; sourceTree = "<group>"; };
+		48B2F2DC40966A984B9D879851C08A76 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		48E04DA387229D28CAB23742A84001A7 /* CodableJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CodableJSON.framework; path = CodableJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CB409AD1399C08E92D5BB03182761D7 /* CodableGeoJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableGeoJSON.xcconfig; sourceTree = "<group>"; };
+		5D5F0EF95EC7C94F9F863E55709D2C55 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		5E888A5A6BE308FD8D439BCFD0BD467F /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		62BFD3193F46A24F7DBF681973C9CBC7 /* GeoJSONFeatureIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoJSONFeatureIdentifier.swift; path = CodableGeoJSON/GeoJSONFeatureIdentifier.swift; sourceTree = "<group>"; };
+		6308D13DE0D34B3B5D991C1239031539 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		6C1E4454A55E4CB7007EEFBB48058687 /* Pods-GeoEarthQuake.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GeoEarthQuake.modulemap"; sourceTree = "<group>"; };
 		6C26C99D4219AE943D8610496170AA7C /* Pods-GeoEarthQuake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoEarthQuake.release.xcconfig"; sourceTree = "<group>"; };
-		6FD055954B9D5B4649B1B8D85785D678 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		7335319EAD3FE5C00B57985C227E500F /* CodableGeoJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableGeoJSON-prefix.pch"; sourceTree = "<group>"; };
-		7557D9ECFEA1FE60A8D56913ED1DA558 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		756E2350BF5F88AC74E25411BAEFACF7 /* CodableGeoJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableGeoJSON.xcconfig; sourceTree = "<group>"; };
+		6CF2182A618CBDE31A9AC4A4FECACF31 /* CodableJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodableJSON-dummy.m"; sourceTree = "<group>"; };
 		788A263F3E7359BD758A1FF6512EA09D /* Pods-GeoEarthQuake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeoEarthQuake.debug.xcconfig"; sourceTree = "<group>"; };
-		795CB4B55F7BFBB389036A4244F1E94B /* CodableGeoJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CodableGeoJSON.modulemap; sourceTree = "<group>"; };
-		80D7763B888CAC09A8A8D2365F1F5126 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		838A18B474500CA7B7A3EDA404976D5E /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		85A0036CB275FFD27D437A73A52EBE87 /* Pods-GeoEarthQuake-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeoEarthQuake-acknowledgements.plist"; sourceTree = "<group>"; };
-		85C048D96E3AF8972B4C237867EEA18A /* CodableGeoJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodableGeoJSON-dummy.m"; sourceTree = "<group>"; };
-		86883FCB42433388D6294D280F9CC511 /* GeoJSONGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoJSONGeometry.swift; path = CodableGeoJSON/GeoJSONGeometry.swift; sourceTree = "<group>"; };
-		88F7FFA954B915B9F98B8438507D97B3 /* CodableJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableJSON-prefix.pch"; sourceTree = "<group>"; };
-		8952F318F1905E2C221B9F0244A37411 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		92D895DE70405CE1394B89210896890E /* GeoJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoJSON.swift; path = CodableGeoJSON/GeoJSON.swift; sourceTree = "<group>"; };
+		8FD6334DE5EE0DE898AE213262A61643 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		951D751F156B8DEC08A273FB3559B200 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96ACAD4622D6926D2AF2ED6A72862D90 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
 		9A31A678D18920C8C92531EA5CFDB65A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A2D01C6BE759171B7B9FD8147A9AC70A /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		A78CAE03DA156A17F0BF988D48DF76C4 /* CodableJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableJSON.xcconfig; sourceTree = "<group>"; };
-		A9CAACA508FBB27CC75FA5F9E3690702 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		AAEBB33CAB6841F767FDE1881DD64FFC /* GeoJSONFeature.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoJSONFeature.swift; path = CodableGeoJSON/GeoJSONFeature.swift; sourceTree = "<group>"; };
-		B24A3EC1EB0CBFA26D3C124CB9E45722 /* CodableJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodableJSON-dummy.m"; sourceTree = "<group>"; };
-		B2C1D8D5AC58B0118AF967D7F52C1C57 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		BE182499CF9AB4F092E5DB46695EB675 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = CodableJSON/JSON.swift; sourceTree = "<group>"; };
-		C175D576FF8D8B210E90ECDB24BA47B1 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		C2F3EB2BFFB4CFA4E9B1C1FA1A7CD886 /* Pods_GeoEarthQuake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GeoEarthQuake.framework; path = "Pods-GeoEarthQuake.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFA6B2E5AE8F0F5D6FB3CBFCAE56C4D9 /* CodableGeoJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CodableGeoJSON.framework; path = CodableGeoJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D2BD8F129A4890A04291DFE5BDFFDB4 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = CodableGeoJSON/JSON.swift; sourceTree = "<group>"; };
+		9DFDDCD04420C40FBD04D43823B6E0C4 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		9F6D7F890E08C6C75EDDFE2AFDE8E4C8 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		A6D0994BA75D8227410B66F139A85729 /* CodableJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableJSON-prefix.pch"; sourceTree = "<group>"; };
+		A8837280073AB6FFDF259951BB5579F5 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		AD898A9F35CAC34E15FA0D527561E3E6 /* CodableGeoJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableGeoJSON-prefix.pch"; sourceTree = "<group>"; };
+		AFDEA88994C14CC70570EE8560C33E00 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		B81F6538E5D3C42F48AA81A53CA6DB2F /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		C29F8A6F534BD2790D625B70F0F81A5C /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C529A9158C36250D5E76D02336CB2E38 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		CD239B16AD7B41558AC8797365D7D648 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDE1356F49561193EAB4B2C27111E658 /* CodableJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CodableJSON.xcconfig; sourceTree = "<group>"; };
+		D0075009596660F5A51BBB44A5D2CB81 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		D3C823E4DFCE3BD36EBE5BD314EA0786 /* Pods-GeoEarthQuake-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeoEarthQuake-frameworks.sh"; sourceTree = "<group>"; };
-		D3EA1241EB66E474751898A5E2E4CE11 /* GeoJSONFeatureIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoJSONFeatureIdentifier.swift; path = CodableGeoJSON/GeoJSONFeatureIdentifier.swift; sourceTree = "<group>"; };
+		D4E33E2928902E8571EDBD51D4B92EFB /* GeoJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoJSON.swift; path = CodableGeoJSON/GeoJSON.swift; sourceTree = "<group>"; };
+		D50F0382C540238E31F8F1A947A60B92 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		D88F2A9EF45C5B9D7D2398CC93FF7A79 /* Pods-GeoEarthQuake-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GeoEarthQuake-dummy.m"; sourceTree = "<group>"; };
-		E316EA6BCC1521D58CFF37992129CC68 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = CodableGeoJSON/JSON.swift; sourceTree = "<group>"; };
-		E90F3B479ECE6E2BD87612EAA122B120 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEABFDD5812242C116DE20F54E1A18DF /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		DF44FBA251DF964F9243663D6B9875D9 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		E6AD95E2B0801E276C8938B5316F4E2B /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		E7E5CB54EBD0AA14B3E86F70CFEEE73A /* CodableGeoJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CodableGeoJSON.modulemap; sourceTree = "<group>"; };
+		E9102AE95F48A963B4F440765471FD17 /* GeoJSONGeometry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoJSONGeometry.swift; path = CodableGeoJSON/GeoJSONGeometry.swift; sourceTree = "<group>"; };
+		EC391D28FBF6527DB48F3F3DEE5B7AB3 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		ECB8F84E7920451C66E9595075C0B43F /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		EE854D2BAE01DEE911E742F380FC54D1 /* GeoJSONPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoJSONPosition.swift; path = CodableGeoJSON/GeoJSONPosition.swift; sourceTree = "<group>"; };
+		F0028A2E6A48927008F20BF9221F5023 /* CodableJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodableJSON-umbrella.h"; sourceTree = "<group>"; };
 		F0AB2453D7326BADDEC7642493DCD32B /* Pods-GeoEarthQuake-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GeoEarthQuake-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F1701B28643DF9921C4BD89497B2DF48 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		FF51762F6974815CD227D34D8CA372F3 /* Pods-GeoEarthQuake-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeoEarthQuake-resources.sh"; sourceTree = "<group>"; };
+		FF6D769F15AB1358E646994C5BA1F14A /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,11 +170,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CA49E9BA73F69B4B6A841BDB0BEFCCB /* Frameworks */ = {
+		2C8E5EBF916AA9CB547529A85578DF5E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				548056BA3BF2F1A5F60868E54F681661 /* Foundation.framework in Frameworks */,
+				147E09E1769F43D10FC7E4ADEC3BE361 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A458218B217EA67F582C4EAACEA59174 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CCB12136F51AC5FDDE9028609CE1CB2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,20 +205,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06DC336981B50C260ABBD73EEC3DE5FA /* CodableGeoJSON */ = {
+		11072686EFFAFC4AE84E6ACF4EAE596F /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				92D895DE70405CE1394B89210896890E /* GeoJSON.swift */,
-				AAEBB33CAB6841F767FDE1881DD64FFC /* GeoJSONFeature.swift */,
-				49C8531A43753FE5F230903D1B1BC31F /* GeoJSONFeatureCollection.swift */,
-				D3EA1241EB66E474751898A5E2E4CE11 /* GeoJSONFeatureIdentifier.swift */,
-				86883FCB42433388D6294D280F9CC511 /* GeoJSONGeometry.swift */,
-				36F37B74CED5BB7FF88928DBFB3D3DEF /* GeoJSONPosition.swift */,
-				E316EA6BCC1521D58CFF37992129CC68 /* JSON.swift */,
-				5F6B5EE9B477D0B95064E5F0AE45D487 /* Support Files */,
+				838A18B474500CA7B7A3EDA404976D5E /* SwiftyJSON.swift */,
+				8171E80D32949EB3DBAB1B1A70D4B79C /* Support Files */,
 			);
-			name = CodableGeoJSON;
-			path = CodableGeoJSON;
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		1274F01029265BA98202968D6122F94B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF44FBA251DF964F9243663D6B9875D9 /* Alamofire.modulemap */,
+				DEABFDD5812242C116DE20F54E1A18DF /* Alamofire.xcconfig */,
+				37C7A412B5BCD99E60909C6E7D7E1331 /* Alamofire-dummy.m */,
+				C529A9158C36250D5E76D02336CB2E38 /* Alamofire-prefix.pch */,
+				D0075009596660F5A51BBB44A5D2CB81 /* Alamofire-umbrella.h */,
+				35657F47E069651034AB5E8CFD54A77A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		17BD5AD14585A954F033DEE85237C9DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF44D6560D2397C44BB4E0E00976B189 /* Alamofire */,
+				826340150558FF1AE879661736B6EB41 /* CodableGeoJSON */,
+				562C988A4E36040497D813435B30AEBE /* CodableJSON */,
+				11072686EFFAFC4AE84E6ACF4EAE596F /* SwiftyJSON */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		25407597F265FEBAE3CB38E9E38BA1CB /* Targets Support Files */ = {
@@ -200,6 +246,32 @@
 				5696ABFAFADA1532F4D04CDA22E51C39 /* Pods-GeoEarthQuake */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2611C93980446B6AFC6F72B5A74C9BF8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3FAB76F4B6529F51741829A5F7F6DD4C /* CodableJSON.modulemap */,
+				CDE1356F49561193EAB4B2C27111E658 /* CodableJSON.xcconfig */,
+				6CF2182A618CBDE31A9AC4A4FECACF31 /* CodableJSON-dummy.m */,
+				A6D0994BA75D8227410B66F139A85729 /* CodableJSON-prefix.pch */,
+				F0028A2E6A48927008F20BF9221F5023 /* CodableJSON-umbrella.h */,
+				8FD6334DE5EE0DE898AE213262A61643 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CodableJSON";
+			sourceTree = "<group>";
+		};
+		2ADDB46C6811EBA037CAECD13CA05A38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				951D751F156B8DEC08A273FB3559B200 /* Alamofire.framework */,
+				1CCF6A2588E02F2E52BE95A42A16369D /* CodableGeoJSON.framework */,
+				48E04DA387229D28CAB23742A84001A7 /* CodableJSON.framework */,
+				1668C71C92AC78E75317A8DDBB9C1DFB /* Pods_GeoEarthQuake.framework */,
+				C29F8A6F534BD2790D625B70F0F81A5C /* SwiftyJSON.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		32CE03967FF144310933A6959A0B51CA /* iOS */ = {
@@ -219,44 +291,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5116264E4E166D6E72FFE4E723543615 /* Support Files */ = {
+		562C988A4E36040497D813435B30AEBE /* CodableJSON */ = {
 			isa = PBXGroup;
 			children = (
-				5A9797BE756B3F914E63E893B77EE56A /* CodableJSON.modulemap */,
-				A78CAE03DA156A17F0BF988D48DF76C4 /* CodableJSON.xcconfig */,
-				B24A3EC1EB0CBFA26D3C124CB9E45722 /* CodableJSON-dummy.m */,
-				88F7FFA954B915B9F98B8438507D97B3 /* CodableJSON-prefix.pch */,
-				5EE2F9CF8C46E0770804ED1660878E37 /* CodableJSON-umbrella.h */,
-				E90F3B479ECE6E2BD87612EAA122B120 /* Info.plist */,
+				3AE06EA46AAF41B28329526303E96E2E /* JSON.swift */,
+				2611C93980446B6AFC6F72B5A74C9BF8 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/CodableJSON";
-			sourceTree = "<group>";
-		};
-		530046C0DC84E6B81C4094CCBFEFA96B /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				36CFA39DB92F3BF0F05019E66F65ACA4 /* AFError.swift */,
-				F1701B28643DF9921C4BD89497B2DF48 /* Alamofire.swift */,
-				4AD01FA715D150590430C6A8E36E2C37 /* DispatchQueue+Alamofire.swift */,
-				31796A1A89EC90DBB85B713DAA03479C /* MultipartFormData.swift */,
-				80D7763B888CAC09A8A8D2365F1F5126 /* NetworkReachabilityManager.swift */,
-				C175D576FF8D8B210E90ECDB24BA47B1 /* Notifications.swift */,
-				28D4BDFF3CC7BF7051912B1C8547A475 /* ParameterEncoding.swift */,
-				5C046CE84E159820866C0C3F7EE6C783 /* Request.swift */,
-				8952F318F1905E2C221B9F0244A37411 /* Response.swift */,
-				1880A90BEC6143B3BB403039252E7A5E /* ResponseSerialization.swift */,
-				553DD33D14D3488D3008962BB94E16BA /* Result.swift */,
-				7557D9ECFEA1FE60A8D56913ED1DA558 /* ServerTrustPolicy.swift */,
-				A9CAACA508FBB27CC75FA5F9E3690702 /* SessionDelegate.swift */,
-				2EB6FA11823E3E417B4BBC2E38D749E1 /* SessionManager.swift */,
-				6FD055954B9D5B4649B1B8D85785D678 /* TaskDelegate.swift */,
-				1433EAECA52DE49415685AB224D3DD73 /* Timeline.swift */,
-				A2D01C6BE759171B7B9FD8147A9AC70A /* Validation.swift */,
-				F5DDDCD485D48F61170DF2841BD73B91 /* Support Files */,
-			);
-			name = Alamofire;
-			path = Alamofire;
+			name = CodableJSON;
+			path = CodableJSON;
 			sourceTree = "<group>";
 		};
 		5696ABFAFADA1532F4D04CDA22E51C39 /* Pods-GeoEarthQuake */ = {
@@ -277,28 +319,74 @@
 			path = "Target Support Files/Pods-GeoEarthQuake";
 			sourceTree = "<group>";
 		};
-		5F6B5EE9B477D0B95064E5F0AE45D487 /* Support Files */ = {
+		8171E80D32949EB3DBAB1B1A70D4B79C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				795CB4B55F7BFBB389036A4244F1E94B /* CodableGeoJSON.modulemap */,
-				756E2350BF5F88AC74E25411BAEFACF7 /* CodableGeoJSON.xcconfig */,
-				85C048D96E3AF8972B4C237867EEA18A /* CodableGeoJSON-dummy.m */,
-				7335319EAD3FE5C00B57985C227E500F /* CodableGeoJSON-prefix.pch */,
-				3C417D40DFD97BA8D3F6F15071981178 /* CodableGeoJSON-umbrella.h */,
-				567CC7DFE7F2CA60C4588EC22D7719F8 /* Info.plist */,
+				37331CF282D7403163A758D9CFA98829 /* Info.plist */,
+				047D72517F22CB052F84F296AD3FCF97 /* SwiftyJSON.modulemap */,
+				5E888A5A6BE308FD8D439BCFD0BD467F /* SwiftyJSON.xcconfig */,
+				5D5F0EF95EC7C94F9F863E55709D2C55 /* SwiftyJSON-dummy.m */,
+				294272A7885612DF2B421EE539EAAF6B /* SwiftyJSON-prefix.pch */,
+				A8837280073AB6FFDF259951BB5579F5 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		826340150558FF1AE879661736B6EB41 /* CodableGeoJSON */ = {
+			isa = PBXGroup;
+			children = (
+				D4E33E2928902E8571EDBD51D4B92EFB /* GeoJSON.swift */,
+				3AA7CAB6DA7C697709A71ADDC577F4FA /* GeoJSONFeature.swift */,
+				189DAE6D73EEAE95D9407E383CD86D39 /* GeoJSONFeatureCollection.swift */,
+				62BFD3193F46A24F7DBF681973C9CBC7 /* GeoJSONFeatureIdentifier.swift */,
+				E9102AE95F48A963B4F440765471FD17 /* GeoJSONGeometry.swift */,
+				EE854D2BAE01DEE911E742F380FC54D1 /* GeoJSONPosition.swift */,
+				9D2BD8F129A4890A04291DFE5BDFFDB4 /* JSON.swift */,
+				A8CDD92853D2774E3BA1925CA254E236 /* Support Files */,
+			);
+			name = CodableGeoJSON;
+			path = CodableGeoJSON;
+			sourceTree = "<group>";
+		};
+		A8CDD92853D2774E3BA1925CA254E236 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7E5CB54EBD0AA14B3E86F70CFEEE73A /* CodableGeoJSON.modulemap */,
+				5CB409AD1399C08E92D5BB03182761D7 /* CodableGeoJSON.xcconfig */,
+				3323CD8D87E54F091B7925DCD2C3DA3F /* CodableGeoJSON-dummy.m */,
+				AD898A9F35CAC34E15FA0D527561E3E6 /* CodableGeoJSON-prefix.pch */,
+				307B18170CACA31B514CBA60368936AA /* CodableGeoJSON-umbrella.h */,
+				CD239B16AD7B41558AC8797365D7D648 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CodableGeoJSON";
 			sourceTree = "<group>";
 		};
-		B463F39718B1B262E6CFEDE63C57A53F /* CodableJSON */ = {
+		AF44D6560D2397C44BB4E0E00976B189 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				BE182499CF9AB4F092E5DB46695EB675 /* JSON.swift */,
-				5116264E4E166D6E72FFE4E723543615 /* Support Files */,
+				2526763B2F6AE64B35186BFBD3E7C613 /* AFError.swift */,
+				B81F6538E5D3C42F48AA81A53CA6DB2F /* Alamofire.swift */,
+				377A4E5425FFBE796F9D96D0EDC1EF31 /* DispatchQueue+Alamofire.swift */,
+				6308D13DE0D34B3B5D991C1239031539 /* MultipartFormData.swift */,
+				034F6FE7CC00FF26D81F541150D5E200 /* NetworkReachabilityManager.swift */,
+				9DFDDCD04420C40FBD04D43823B6E0C4 /* Notifications.swift */,
+				9F6D7F890E08C6C75EDDFE2AFDE8E4C8 /* ParameterEncoding.swift */,
+				D50F0382C540238E31F8F1A947A60B92 /* Request.swift */,
+				48B2F2DC40966A984B9D879851C08A76 /* Response.swift */,
+				96ACAD4622D6926D2AF2ED6A72862D90 /* ResponseSerialization.swift */,
+				E6AD95E2B0801E276C8938B5316F4E2B /* Result.swift */,
+				AFDEA88994C14CC70570EE8560C33E00 /* ServerTrustPolicy.swift */,
+				EC391D28FBF6527DB48F3F3DEE5B7AB3 /* SessionDelegate.swift */,
+				ECB8F84E7920451C66E9595075C0B43F /* SessionManager.swift */,
+				13E1CA4E022E8C574EAFCB1EBBCABD9D /* TaskDelegate.swift */,
+				FF6D769F15AB1358E646994C5BA1F14A /* Timeline.swift */,
+				2FA11A99DA5EE98DACC01DE8D76EFEB0 /* Validation.swift */,
+				1274F01029265BA98202968D6122F94B /* Support Files */,
 			);
-			name = CodableJSON;
-			path = CodableJSON;
+			name = Alamofire;
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -306,45 +394,10 @@
 			children = (
 				24390EFD555DD124430DFF9724065945 /* Podfile */,
 				4A748D221C4378E9390F991DB3FC28A2 /* Frameworks */,
-				D8854825138727E778D85BC337D56818 /* Pods */,
-				D191FB73470AC133709CBCBB8688A4E9 /* Products */,
+				17BD5AD14585A954F033DEE85237C9DF /* Pods */,
+				2ADDB46C6811EBA037CAECD13CA05A38 /* Products */,
 				25407597F265FEBAE3CB38E9E38BA1CB /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D191FB73470AC133709CBCBB8688A4E9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				48392FD51AB2A9C5E74BD50FCAC463AC /* Alamofire.framework */,
-				CFA6B2E5AE8F0F5D6FB3CBFCAE56C4D9 /* CodableGeoJSON.framework */,
-				44826A7E9B9C11B59518E67EDD76009B /* CodableJSON.framework */,
-				C2F3EB2BFFB4CFA4E9B1C1FA1A7CD886 /* Pods_GeoEarthQuake.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D8854825138727E778D85BC337D56818 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				530046C0DC84E6B81C4094CCBFEFA96B /* Alamofire */,
-				06DC336981B50C260ABBD73EEC3DE5FA /* CodableGeoJSON */,
-				B463F39718B1B262E6CFEDE63C57A53F /* CodableJSON */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		F5DDDCD485D48F61170DF2841BD73B91 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0F1969B114A1ECBF0F205EFC83AE2E52 /* Alamofire.modulemap */,
-				B2C1D8D5AC58B0118AF967D7F52C1C57 /* Alamofire.xcconfig */,
-				59700E0530E51E8ACC6147691C98CC00 /* Alamofire-dummy.m */,
-				279093FDE8D066ACC5956DD21FB9610F /* Alamofire-prefix.pch */,
-				0C0FC20DB599893C5B2361EB0D7D2AE2 /* Alamofire-umbrella.h */,
-				35E876718B071C5DD7FAB96B9669E37B /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,14 +408,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6F6E4CC26451E91B59FAE0F6841DC1F /* Alamofire-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2B89EFCC17CECB753141193E4AF99F94 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE2BBDA460C52946753A8E4BFA3F7363 /* Pods-GeoEarthQuake-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +424,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBE9E0B05DF478A17F00FFB71CC183F2 /* CodableGeoJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C901F86A3781DBE081CF375E997ABBF9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1B5678EC779B7A30C8197939642AF34 /* Pods-GeoEarthQuake-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F14F1045C80CD745393174603FC91F88 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B262B33D0BAB5BD5F1207A6314F59EE5 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +461,7 @@
 			);
 			name = CodableJSON;
 			productName = CodableJSON;
-			productReference = 44826A7E9B9C11B59518E67EDD76009B /* CodableJSON.framework */;
+			productReference = 48E04DA387229D28CAB23742A84001A7 /* CodableJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3383968E74B5371B20BB519B170DC7FD /* Alamofire */ = {
@@ -418,28 +479,25 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 48392FD51AB2A9C5E74BD50FCAC463AC /* Alamofire.framework */;
+			productReference = 951D751F156B8DEC08A273FB3559B200 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		851CC68DB69E6BF2FEBA7A5ACB2EDA7D /* Pods-GeoEarthQuake */ = {
+		834D9AD34BB6829F398FEFE056A0D83C /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE2A3D0C2CEC0BB24702874767130565 /* Build configuration list for PBXNativeTarget "Pods-GeoEarthQuake" */;
+			buildConfigurationList = 9D219FF618392C961C0087FC64CE5C07 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				2B89EFCC17CECB753141193E4AF99F94 /* Headers */,
-				6947B3BCB51B48F4BA4245442C12A3DE /* Sources */,
-				4CA49E9BA73F69B4B6A841BDB0BEFCCB /* Frameworks */,
-				B910EFC8128DC0C101E901C9CD143052 /* Resources */,
+				F14F1045C80CD745393174603FC91F88 /* Headers */,
+				0A927ABFB95201AA71A5CF6889DCA5E3 /* Sources */,
+				A458218B217EA67F582C4EAACEA59174 /* Frameworks */,
+				259DE307A2C7A8EACB8B8D6F2DCBDCFD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EEEB3339200AA0FCB7B9F7F6109DC39B /* PBXTargetDependency */,
-				CBDD6B716CFB2CB18F1A131E4C28033E /* PBXTargetDependency */,
-				CAE51BB4472C2FC8365EEDBFC2BA026B /* PBXTargetDependency */,
 			);
-			name = "Pods-GeoEarthQuake";
-			productName = "Pods-GeoEarthQuake";
-			productReference = C2F3EB2BFFB4CFA4E9B1C1FA1A7CD886 /* Pods_GeoEarthQuake.framework */;
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = C29F8A6F534BD2790D625B70F0F81A5C /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A15A1D9E06E1E684D6C03BD58E6ABF55 /* CodableGeoJSON */ = {
@@ -458,7 +516,29 @@
 			);
 			name = CodableGeoJSON;
 			productName = CodableGeoJSON;
-			productReference = CFA6B2E5AE8F0F5D6FB3CBFCAE56C4D9 /* CodableGeoJSON.framework */;
+			productReference = 1CCF6A2588E02F2E52BE95A42A16369D /* CodableGeoJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EE3609AC1E1E15966FE329B174C3BC4B /* Pods-GeoEarthQuake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DB014CB94035BD777C1CDFB12E1D7C2 /* Build configuration list for PBXNativeTarget "Pods-GeoEarthQuake" */;
+			buildPhases = (
+				C901F86A3781DBE081CF375E997ABBF9 /* Headers */,
+				2A19DA9AADD6E0454EAAF5F6CEEC3B9B /* Sources */,
+				2C8E5EBF916AA9CB547529A85578DF5E /* Frameworks */,
+				DB624B417F10761BCC3BDDB12E9EAA16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0949BF1557C2D45CFD3C244A9CE814AA /* PBXTargetDependency */,
+				3B4D0222B7B84D595549E81CF2B3E0C8 /* PBXTargetDependency */,
+				12FD5B4162398FF8902FE3FE631D786C /* PBXTargetDependency */,
+				5D8AD699CB314637BAD3730BAD4AEB5B /* PBXTargetDependency */,
+			);
+			name = "Pods-GeoEarthQuake";
+			productName = "Pods-GeoEarthQuake";
+			productReference = 1668C71C92AC78E75317A8DDBB9C1DFB /* Pods_GeoEarthQuake.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -478,19 +558,27 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = D191FB73470AC133709CBCBB8688A4E9 /* Products */;
+			productRefGroup = 2ADDB46C6811EBA037CAECD13CA05A38 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				3383968E74B5371B20BB519B170DC7FD /* Alamofire */,
 				A15A1D9E06E1E684D6C03BD58E6ABF55 /* CodableGeoJSON */,
 				19E7673C9E4346838CEAEECAA348FB8D /* CodableJSON */,
-				851CC68DB69E6BF2FEBA7A5ACB2EDA7D /* Pods-GeoEarthQuake */,
+				EE3609AC1E1E15966FE329B174C3BC4B /* Pods-GeoEarthQuake */,
+				834D9AD34BB6829F398FEFE056A0D83C /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		259DE307A2C7A8EACB8B8D6F2DCBDCFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		28FF73341543B6F0A7DF3C20CFFEA0AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -505,7 +593,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B910EFC8128DC0C101E901C9CD143052 /* Resources */ = {
+		DB624B417F10761BCC3BDDB12E9EAA16 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -522,6 +610,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A927ABFB95201AA71A5CF6889DCA5E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5BF173D3B75F1AEBDD9C4D602512BB1 /* SwiftyJSON-dummy.m in Sources */,
+				C6474FD546D80C827560D066AE07F96B /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1EAA75A934148622AFFBA509B76150B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -537,11 +634,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6947B3BCB51B48F4BA4245442C12A3DE /* Sources */ = {
+		2A19DA9AADD6E0454EAAF5F6CEEC3B9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50E64D0492DF1EB90E650E4AC5FE5B1F /* Pods-GeoEarthQuake-dummy.m in Sources */,
+				079DAD319447D149D49B1B569C44E874 /* Pods-GeoEarthQuake-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,36 +679,42 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0949BF1557C2D45CFD3C244A9CE814AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 3383968E74B5371B20BB519B170DC7FD /* Alamofire */;
+			targetProxy = 485D0299685904F878FCA77E68AD9E70 /* PBXContainerItemProxy */;
+		};
+		12FD5B4162398FF8902FE3FE631D786C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CodableJSON;
+			target = 19E7673C9E4346838CEAEECAA348FB8D /* CodableJSON */;
+			targetProxy = 3AE0A7A3BE35339C8A30CD5AFB19ED43 /* PBXContainerItemProxy */;
+		};
 		1BBF4BF9E76C9B0135F5B1D619B68BDC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CodableJSON;
 			target = 19E7673C9E4346838CEAEECAA348FB8D /* CodableJSON */;
 			targetProxy = 479086E04EC9A0CB08F230F1FD8B198A /* PBXContainerItemProxy */;
 		};
-		CAE51BB4472C2FC8365EEDBFC2BA026B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CodableJSON;
-			target = 19E7673C9E4346838CEAEECAA348FB8D /* CodableJSON */;
-			targetProxy = B410000EE5402D72A87B3D231B0CCED3 /* PBXContainerItemProxy */;
-		};
-		CBDD6B716CFB2CB18F1A131E4C28033E /* PBXTargetDependency */ = {
+		3B4D0222B7B84D595549E81CF2B3E0C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CodableGeoJSON;
 			target = A15A1D9E06E1E684D6C03BD58E6ABF55 /* CodableGeoJSON */;
-			targetProxy = 2BDDF3346EB164899803C492B16A319A /* PBXContainerItemProxy */;
+			targetProxy = 32891D60D42725FF6EC2430BBD6E17C6 /* PBXContainerItemProxy */;
 		};
-		EEEB3339200AA0FCB7B9F7F6109DC39B /* PBXTargetDependency */ = {
+		5D8AD699CB314637BAD3730BAD4AEB5B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Alamofire;
-			target = 3383968E74B5371B20BB519B170DC7FD /* Alamofire */;
-			targetProxy = 69630FF00CE79FAD4410CF996B57DFAA /* PBXContainerItemProxy */;
+			name = SwiftyJSON;
+			target = 834D9AD34BB6829F398FEFE056A0D83C /* SwiftyJSON */;
+			targetProxy = DEB25907F25580401EB49EADDAB17141 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1BBC3D8FCE452EC8997E09C0AED44CF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A78CAE03DA156A17F0BF988D48DF76C4 /* CodableJSON.xcconfig */;
+			baseConfigurationReference = CDE1356F49561193EAB4B2C27111E658 /* CodableJSON.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -646,7 +749,7 @@
 		};
 		62AF540A103A62931261C7A1F5A054C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2C1D8D5AC58B0118AF967D7F52C1C57 /* Alamofire.xcconfig */;
+			baseConfigurationReference = DEABFDD5812242C116DE20F54E1A18DF /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -748,7 +851,7 @@
 		};
 		6F224A2BC20C4831A169BD295DAB1813 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2C1D8D5AC58B0118AF967D7F52C1C57 /* Alamofire.xcconfig */;
+			baseConfigurationReference = DEABFDD5812242C116DE20F54E1A18DF /* Alamofire.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -781,9 +884,48 @@
 			};
 			name = Debug;
 		};
-		9AE045B623969E4513C0975512CAC553 /* Debug */ = {
+		7BECE904A9A119C1BAE4480ADFCA7ABB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 756E2350BF5F88AC74E25411BAEFACF7 /* CodableGeoJSON.xcconfig */;
+			baseConfigurationReference = 6C26C99D4219AE943D8610496170AA7C /* Pods-GeoEarthQuake.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GeoEarthQuake/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeoEarthQuake/Pods-GeoEarthQuake.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DD92905E9BC9B2A44D96FE3DDCE76FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E888A5A6BE308FD8D439BCFD0BD467F /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -794,8 +936,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CodableGeoJSON/CodableGeoJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CodableGeoJSON/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -803,20 +945,21 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/CodableGeoJSON/CodableGeoJSON.modulemap";
-				PRODUCT_MODULE_NAME = CodableGeoJSON;
-				PRODUCT_NAME = CodableGeoJSON;
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		AB4E53D74FEC9781C7DB094D4404756A /* Debug */ = {
+		960C077703D7FEE86323153A7D3DBE5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 788A263F3E7359BD758A1FF6512EA09D /* Pods-GeoEarthQuake.debug.xcconfig */;
 			buildSettings = {
@@ -854,9 +997,44 @@
 			};
 			name = Debug;
 		};
+		9AE045B623969E4513C0975512CAC553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CB409AD1399C08E92D5BB03182761D7 /* CodableGeoJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CodableGeoJSON/CodableGeoJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CodableGeoJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CodableGeoJSON/CodableGeoJSON.modulemap";
+				PRODUCT_MODULE_NAME = CodableGeoJSON;
+				PRODUCT_NAME = CodableGeoJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		B81CB405FBAF8FA6ED3D2D5CE24BDA96 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 756E2350BF5F88AC74E25411BAEFACF7 /* CodableGeoJSON.xcconfig */;
+			baseConfigurationReference = 5CB409AD1399C08E92D5BB03182761D7 /* CodableGeoJSON.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -890,9 +1068,44 @@
 			};
 			name = Release;
 		};
+		CC3A206921CE93BB6CAAB584774E6842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E888A5A6BE308FD8D439BCFD0BD467F /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		E6A8F16BACC81F67A8707BC4AE2185A8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A78CAE03DA156A17F0BF988D48DF76C4 /* CodableJSON.xcconfig */;
+			baseConfigurationReference = CDE1356F49561193EAB4B2C27111E658 /* CodableJSON.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -988,45 +1201,6 @@
 			};
 			name = Release;
 		};
-		F24AA4DF0FF89E6C291BA73A7B43617E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C26C99D4219AE943D8610496170AA7C /* Pods-GeoEarthQuake.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GeoEarthQuake/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GeoEarthQuake/Pods-GeoEarthQuake.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1048,6 +1222,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5DB014CB94035BD777C1CDFB12E1D7C2 /* Build configuration list for PBXNativeTarget "Pods-GeoEarthQuake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				960C077703D7FEE86323153A7D3DBE5C /* Debug */,
+				7BECE904A9A119C1BAE4480ADFCA7ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		628812DC5A9B95127F317527D879371E /* Build configuration list for PBXNativeTarget "CodableGeoJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1057,11 +1240,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE2A3D0C2CEC0BB24702874767130565 /* Build configuration list for PBXNativeTarget "Pods-GeoEarthQuake" */ = {
+		9D219FF618392C961C0087FC64CE5C07 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB4E53D74FEC9781C7DB094D4404756A /* Debug */,
-				F24AA4DF0FF89E6C291BA73A7B43617E /* Release */,
+				CC3A206921CE93BB6CAAB584774E6842 /* Debug */,
+				8DD92905E9BC9B2A44D96FE3DDCE76FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

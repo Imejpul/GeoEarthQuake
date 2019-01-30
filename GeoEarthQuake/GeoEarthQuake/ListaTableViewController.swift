@@ -8,25 +8,44 @@
 
 import UIKit
 import CodableGeoJSON
+import Alamofire
 
 class ListaTableViewController: UITableViewController {
     
+    let urlHora = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"
+    
     var listaTerremotos = ["a", "b", "c"]
-    
-    //propiedades terremoto
-    struct LocationProperties: Codable {
-        let magnitud: Decimal
-        let place: String
-        let time: Int64
-        let titulo: String
-    }
-    
-    typealias LocationFeatureCollection = GeoJSONFeatureCollection<PointGeometry, LocationProperties>;<#type expression#>
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //descarga GeoJSON Terremotos (todos) de la última hora
+        Alamofire.request(urlHora)
+            .responseData { response in
+                if let data = response.data {
+                    
+                    //aquí entra el CodableGeoJSON / SwiftyJSON
+                    
+                    /*//propiedades terremoto
+                    struct LocationProperties: Codable {
+                        let magnitud: Decimal
+                        let place: String
+                        let time: Int64
+                        let titulo: String
+                    }
+                    
+                    typealias LocationFeatureCollection = GeoJSONFeatureCollection<PointGeometry, LocationProperties>;<#type expression#>
+                    
+                    let locationFeatures = try JSONDecoder().decode(LocationFeatureCollection.self, from: data)
+                    let firstFeature = locationFeatures.features.first
+                    firstFeature?.geometry.longitude
+                    firstFeature?.geometry.latitude
+                    firstFeature?.geometry.depth*/
+                    
+                }
+            
+        }
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
