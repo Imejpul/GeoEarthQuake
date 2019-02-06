@@ -15,22 +15,19 @@ class ListaTableViewController: UITableViewController {
     let urlHora = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"
     
     struct Terremoto {
-        var magnitud: Decimal
+        var magnitud: Double
         var sitio: String
-        var fechaHora: Int64
+        var fechaHora: Date
+        var duracion: Int
         var titulo: String
-        var longitud: Decimal
-        var latitud: Decimal
-        var profundidad: Decimal
+        var longitud: Double
+        var latitud: Double
+        var profundidad: Double
     }
     
-    var listaTerremotosTest = ["a", "b", "c"]
-    /*var terremotos = [Terremoto(magnitud: <#T##Decimal#>, sitio: <#T##String#>, fechaHora: <#T##Int64#>, titulo: <#T##String#>, longitud: <#T##Decimal#>, latitud: <#T##Decimal#>, profundidad: <#T##Decimal#>)]*/
+    var listaTerremotos = [Terremoto]()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
+    private func cargarDatosDesdeJSON(){
         
         Alamofire.request(urlHora, method: .get).validate().responseJSON { response in
             switch response.result {
@@ -38,61 +35,42 @@ class ListaTableViewController: UITableViewController {
                 let json = JSON(value)
                 
                 //recorremos el json
-                print("JSON: \(json)")
-                print("---------------------")
-                
                 let features = json["features"].count
                 
                 for valor in 0..<features{
-                    //controlar que no sea null -> json["features"][valor]["properties"]["place"]
-                   
-                    let place = json["features"][valor]["properties"]["place"]
-                    print(valor)
-                    print(place)
                     
+                    let mag = json["features"][valor]["properties"]["mag"].doubleValue
+                    let place = json["features"][valor]["properties"]["place"].stringValue
+                    let time = json["features"][valor]["properties"]["time"].intValue
+                    let updated = json["features"][valor]["properties"]["updated"].intValue - time
+                    let title = json["features"][valor]["properties"]["title"].stringValue
+                    let longitude = json["features"][valor]["geometry"]["coordinates"][0].doubleValue
+                    let latitude = json["features"][valor]["geometry"]["coordinates"][1].doubleValue
+                    let depth = json["features"][valor]["geometry"]["coordinates"][2].doubleValue
                     
+                    //Tratamiento de la fecha
+                    let fechaConFormato = Date(timeIntervalSince1970: Double(time/1000))
+                    
+                    //Creando objeto terremoto con datos descargados
+                    let earthQuake = Terremoto(magnitud: mag, sitio: place, fechaHora: fechaConFormato, duracion: updated/1000, titulo: title, longitud: longitude, latitud: latitude, profundidad: depth)
+                    
+                    //Añadiendo objeto terremoto a la lista para ser visualizado
+                    self.listaTerremotos.append(earthQuake)
                 }
-                //asignamos valores a struct y guardamos en lista
                 
-                /*testeo
-                print("JSON: \(json)")
-                print("--------------")
-                print(json[][0]["properties"]["place"])
-                print(json["features"].count)
-                //print(json["features"][indexPath.row]["properties"]["place"])
-                */
+                //recarga de la tabla para visualizar los datos descargados
+                self.tableView.reloadData()
+                
             case .failure(let error):
                 print(error)
             }
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        /*//descarga GeoJSON Terremotos (todos) de la última hora
-        Alamofire.request(urlHora)
-            .responseData { response in
-                if let data = response.data {
-                    
-                    //aquí entra el CodableGeoJSON / SwiftyJSON
-                    
-                    /*//propiedades terremoto
-                    struct LocationProperties: Codable {
-                        let magnitud: Decimal
-                        let place: String
-                        let time: Int64
-                        let titulo: String
-                    }
-                    
-                    typealias LocationFeatureCollection = GeoJSONFeatureCollection<PointGeometry, LocationProperties>;<#type expression#>
-                    
-                    let locationFeatures = try JSONDecoder().decode(LocationFeatureCollection.self, from: data)
-                    let firstFeature = locationFeatures.features.first
-                    firstFeature?.geometry.longitude
-                    firstFeature?.geometry.latitude
-                    firstFeature?.geometry.depth*/
-                    
-                }
-            
-        }*/
-        
+        cargarDatosDesdeJSON()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -110,7 +88,7 @@ class ListaTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return listaTerremotosTest.count
+        return listaTerremotos.count
     }
 
     
@@ -118,7 +96,7 @@ class ListaTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaTerremoto", for: indexPath) as! EarthQuakeTableViewCell
         
-            cell.tituloTerremoto.text = listaTerremotosTest[indexPath.row]
+            cell.tituloTerremoto.text = listaTerremotos[indexPath.row].titulo
 
         // Configure the cell...
 
