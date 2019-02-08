@@ -13,6 +13,18 @@ import SwiftyJSON
 class ListaTableViewController: UITableViewController {
     
     let urlHora = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"
+    let urlDia = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
+    let urlSemana = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
+    let urlMes = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
+    
+    @IBAction func boton30DiasPulsado(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func boton7DiasPulsado(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func botonDiaPulsado(_ sender: UIBarButtonItem) {
+    }
+    @IBAction func botonHoraPulsado(_ sender: UIBarButtonItem) {
+    }
     
     struct Terremoto {
         var magnitud: Double
