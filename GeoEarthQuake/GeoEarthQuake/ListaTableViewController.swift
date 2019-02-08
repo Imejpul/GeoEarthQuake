@@ -17,13 +17,18 @@ class ListaTableViewController: UITableViewController {
     let urlSemana = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
     let urlMes = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
     
-    @IBAction func boton30DiasPulsado(_ sender: UIBarButtonItem) {
+    @IBAction func boton30DiasPulsado(_ sender: Any) {
+        //self.listaTerremotos.removeAll()
+        cargarDatosDesdeJSON(url: urlMes)
     }
-    @IBAction func boton7DiasPulsado(_ sender: UIBarButtonItem) {
+    @IBAction func boton7DiasPulsado(_ sender: Any) {
+        cargarDatosDesdeJSON(url: urlSemana)
     }
-    @IBAction func botonDiaPulsado(_ sender: UIBarButtonItem) {
+    @IBAction func botonDiaPulsado(_ sender: Any) {
+        cargarDatosDesdeJSON(url: urlDia)
     }
-    @IBAction func botonHoraPulsado(_ sender: UIBarButtonItem) {
+    @IBAction func botonHoraPulsado(_ sender: Any) {
+        cargarDatosDesdeJSON(url: urlHora)
     }
     
     struct Terremoto {
@@ -39,9 +44,9 @@ class ListaTableViewController: UITableViewController {
     
     var listaTerremotos = [Terremoto]()
 
-    private func cargarDatosDesdeJSON(){
+    private func cargarDatosDesdeJSON(url: String){
         
-        Alamofire.request(urlHora, method: .get).validate().responseJSON { response in
+        Alamofire.request(url, method: .get).validate().responseJSON { response in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
@@ -64,6 +69,7 @@ class ListaTableViewController: UITableViewController {
                     let fechaConFormato = Date(timeIntervalSince1970: Double(time/1000))
                     
                     //Creando objeto terremoto con datos descargados
+                    //self.listaTerremotos.removeAll()
                     let earthQuake = Terremoto(magnitud: mag, sitio: place, fechaHora: fechaConFormato, duracion: updated/1000, titulo: title, longitud: longitude, latitud: latitude, profundidad: depth)
                     
                     //Añadiendo objeto terremoto a la lista para ser visualizado
@@ -82,7 +88,7 @@ class ListaTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        cargarDatosDesdeJSON()
+        cargarDatosDesdeJSON(url: urlHora)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

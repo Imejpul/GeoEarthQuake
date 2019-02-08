@@ -62,12 +62,12 @@
                                 <action selector="botonDiaPulsado:" destination="fCu-0J-mVQ" id="F9z-5n-h3L"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="7 Días" id="Pu3-nE-bsw">
+                        <barButtonItem title="Semana" id="Pu3-nE-bsw">
                             <connections>
                                 <action selector="boton7DiasPulsado:" destination="fCu-0J-mVQ" id="3dE-yY-oI3"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="30 Días" id="Ndw-gT-j2A">
+                        <barButtonItem title="Mes" id="Ndw-gT-j2A">
                             <connections>
                                 <action selector="boton30DiasPulsado:" destination="fCu-0J-mVQ" id="fkj-uV-Yq4"/>
                             </connections>
