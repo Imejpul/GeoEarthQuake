@@ -10,12 +10,23 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
+struct Terremoto {
+    var magnitud: Double
+    var sitio: String
+    var fechaHora: Date
+    var duracion: Int
+    var titulo: String
+    var longitud: Double
+    var latitud: Double
+    var profundidad: Double
+}
+
 class ListaTableViewController: UITableViewController {
     
     let urlHora = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"
-    let urlDia = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
-    let urlSemana = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
-    let urlMes = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
+    let urlDia = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson"
+    let urlSemana = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson"
+    let urlMes = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson"
     
     @IBAction func boton30DiasPulsado(_ sender: Any) {
         //self.listaTerremotos.removeAll()
@@ -31,20 +42,13 @@ class ListaTableViewController: UITableViewController {
         cargarDatosDesdeJSON(url: urlHora)
     }
     
-    struct Terremoto {
-        var magnitud: Double
-        var sitio: String
-        var fechaHora: Date
-        var duracion: Int
-        var titulo: String
-        var longitud: Double
-        var latitud: Double
-        var profundidad: Double
-    }
+ 
     
     var listaTerremotos = [Terremoto]()
 
     private func cargarDatosDesdeJSON(url: String){
+        
+        listaTerremotos.removeAll()
         
         Alamofire.request(url, method: .get).validate().responseJSON { response in
             switch response.result {
@@ -119,6 +123,28 @@ class ListaTableViewController: UITableViewController {
         // Configure the cell...
 
         return cell
+    }
+    
+    
+    
+    // Segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "mostrarInfoTerremoto" {
+            
+            let indexPath = tableView.indexPathForSelectedRow
+            let selectedRow = indexPath!.row
+            let destino = segue.destination as! InfoEarthQuakeViewController;
+            
+            destino.terremoto = Terremoto(
+                magnitud: listaTerremotos[selectedRow].magnitud,
+                sitio: listaTerremotos[selectedRow].sitio,
+                fechaHora: listaTerremotos[selectedRow].fechaHora,
+                duracion: listaTerremotos[selectedRow].duracion,
+                titulo: listaTerremotos[selectedRow].titulo,
+                longitud: listaTerremotos[selectedRow].longitud,
+                latitud: listaTerremotos[selectedRow].latitud,
+                profundidad: listaTerremotos[selectedRow].profundidad)            
+        }
     }
 
     /*
