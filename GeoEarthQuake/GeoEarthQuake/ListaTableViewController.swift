@@ -10,17 +10,6 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-struct Terremoto {
-    var magnitud: Double
-    var sitio: String
-    var fechaHora: Date
-    var duracion: Int
-    var titulo: String
-    var longitud: Double
-    var latitud: Double
-    var profundidad: Double
-}
-
 class ListaTableViewController: UITableViewController {
     
     let urlHora = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"
@@ -73,7 +62,6 @@ class ListaTableViewController: UITableViewController {
                     let fechaConFormato = Date(timeIntervalSince1970: Double(time/1000))
                     
                     //Creando objeto terremoto con datos descargados
-                    //self.listaTerremotos.removeAll()
                     let earthQuake = Terremoto(magnitud: mag, sitio: place, fechaHora: fechaConFormato, duracion: updated/1000, titulo: title, longitud: longitude, latitud: latitude, profundidad: depth)
                     
                     //Añadiendo objeto terremoto a la lista para ser visualizado
