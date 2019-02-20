@@ -12,9 +12,6 @@ class EarthQuakeTableViewCell: UITableViewCell {
 
     @IBOutlet weak var tituloTerremoto: UILabel!
     
-    @IBAction func botonVerPulsado(_ sender: Any) {
-    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
