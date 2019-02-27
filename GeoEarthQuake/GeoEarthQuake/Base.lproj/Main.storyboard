@@ -27,16 +27,17 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFi-A6-Vvl">
-                                            <rect key="frame" x="16" y="11" width="42" height="22"/>
+                                            <rect key="frame" x="16" y="11" width="343" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="sFi-A6-Vvl" firstAttribute="top" secondItem="2kf-xU-btW" secondAttribute="topMargin" id="QZc-Rr-xF6"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="sFi-A6-Vvl" secondAttribute="bottom" id="gEO-hQ-khP"/>
-                                        <constraint firstItem="sFi-A6-Vvl" firstAttribute="leading" secondItem="2kf-xU-btW" secondAttribute="leadingMargin" id="nYb-Zf-Cbx"/>
+                                        <constraint firstItem="sFi-A6-Vvl" firstAttribute="leading" secondItem="2kf-xU-btW" secondAttribute="leadingMargin" id="6or-m0-RjN"/>
+                                        <constraint firstItem="sFi-A6-Vvl" firstAttribute="bottom" secondItem="2kf-xU-btW" secondAttribute="bottomMargin" id="Ubu-bX-y0v"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="sFi-A6-Vvl" secondAttribute="trailing" id="sPO-cg-4ov"/>
+                                        <constraint firstItem="sFi-A6-Vvl" firstAttribute="top" secondItem="2kf-xU-btW" secondAttribute="topMargin" id="tdl-Un-ixC"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -207,7 +208,7 @@
                         <viewLayoutGuide key="safeArea" id="KpH-Xb-Jth"/>
                     </view>
                     <connections>
-                        <outlet property="mapView" destination="O2A-eo-WxO" id="W5w-ms-BRv"/>
+                        <outlet property="mapView" destination="O2A-eo-WxO" id="C6R-Zo-rmg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBW-iJ-lVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -240,6 +241,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Ne2-V4-R5o"/>
+        <segue reference="fWB-hO-czN"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40618118221DEBA60080C2FB /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40618117221DEBA60080C2FB /* Evento.swift */; };
 		4061811A221DECB30080C2FB /* Terremoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40618119221DECB30080C2FB /* Terremoto.swift */; };
 		4061811E221DF3E00080C2FB /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4061811D221DF3E00080C2FB /* MapaViewController.swift */; };
 		440A9A442201C4E80035F42E /* EarthQuakeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440A9A432201C4E80035F42E /* EarthQuakeTableViewCell.swift */; };
@@ -21,7 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		40618117221DEBA60080C2FB /* Evento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
 		40618119221DECB30080C2FB /* Terremoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terremoto.swift; sourceTree = "<group>"; };
 		4061811D221DF3E00080C2FB /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 		440A9A432201C4E80035F42E /* EarthQuakeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthQuakeTableViewCell.swift; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				44BD38F32201BCB6009F48D4 /* AppDelegate.swift */,
-				40618117221DEBA60080C2FB /* Evento.swift */,
 				40618119221DECB30080C2FB /* Terremoto.swift */,
 				44BD38F72201BCB6009F48D4 /* Main.storyboard */,
 				44BD39052201BFB1009F48D4 /* ListaTableViewController.swift */,
@@ -235,7 +232,6 @@
 				4061811A221DECB30080C2FB /* Terremoto.swift in Sources */,
 				4061811E221DF3E00080C2FB /* MapaViewController.swift in Sources */,
 				44BD39082201C154009F48D4 /* InfoEarthQuakeViewController.swift in Sources */,
-				40618118221DEBA60080C2FB /* Evento.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,21 +32,18 @@ class InfoEarthQuakeViewController: UIViewController {
         long.text = "Long: " + String(terremoto.longitud)
         lat.text = "Lat: " + String(terremoto.latitud)
         depth.text = "Depth: " + String(terremoto.profundidad) + " Kms"
-        duration.text = "Duration: " + String(terremoto.duracion) + " Seconds"
-
-        // Do any additional setup after loading the view.
-    }
+        duration.text = ""
+    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "mostrarMapaTerremoto" {
+            let destino = segue.destination as! MapaViewController;
+            destino.terremotos.removeAll()
+            destino.terremotos.append(terremoto)
+            
+        }
     }
-    */
     
     private func convertirFechaA_String(fecha_origen: Date) -> String{
         var fechaConvertida = ""

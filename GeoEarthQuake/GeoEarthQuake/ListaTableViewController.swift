@@ -115,7 +115,7 @@ class ListaTableViewController: UITableViewController {
     
     
     
-    // Segue
+    // Segue info detallada terremoto
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "mostrarInfoTerremoto" {
             
@@ -132,6 +132,12 @@ class ListaTableViewController: UITableViewController {
                 longitud: listaTerremotos[selectedRow].longitud,
                 latitud: listaTerremotos[selectedRow].latitud,
                 profundidad: listaTerremotos[selectedRow].profundidad)            
+        }
+        
+        if segue.identifier == "mostrarTerremotosMapa"{
+            let destino = segue.destination as! MapaViewController;
+            destino.terremotos.removeAll()
+            destino.terremotos = listaTerremotos
         }
     }
 
