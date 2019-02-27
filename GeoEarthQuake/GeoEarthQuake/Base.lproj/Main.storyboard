@@ -27,16 +27,17 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFi-A6-Vvl">
-                                            <rect key="frame" x="16" y="11" width="42" height="22"/>
+                                            <rect key="frame" x="16" y="11" width="343" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="sFi-A6-Vvl" firstAttribute="top" secondItem="2kf-xU-btW" secondAttribute="topMargin" id="QZc-Rr-xF6"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="sFi-A6-Vvl" secondAttribute="bottom" id="gEO-hQ-khP"/>
-                                        <constraint firstItem="sFi-A6-Vvl" firstAttribute="leading" secondItem="2kf-xU-btW" secondAttribute="leadingMargin" id="nYb-Zf-Cbx"/>
+                                        <constraint firstItem="sFi-A6-Vvl" firstAttribute="leading" secondItem="2kf-xU-btW" secondAttribute="leadingMargin" id="6or-m0-RjN"/>
+                                        <constraint firstItem="sFi-A6-Vvl" firstAttribute="bottom" secondItem="2kf-xU-btW" secondAttribute="bottomMargin" id="Ubu-bX-y0v"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="sFi-A6-Vvl" secondAttribute="trailing" id="sPO-cg-4ov"/>
+                                        <constraint firstItem="sFi-A6-Vvl" firstAttribute="top" secondItem="2kf-xU-btW" secondAttribute="topMargin" id="tdl-Un-ixC"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -75,7 +76,11 @@
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="wZa-BM-erw"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="ozg-Te-X9r">
-                        <barButtonItem key="rightBarButtonItem" title="All in map" id="LnU-rj-Qap"/>
+                        <barButtonItem key="rightBarButtonItem" title="All in map" id="LnU-rj-Qap">
+                            <connections>
+                                <segue destination="i5Z-eO-2E2" kind="show" identifier="mostrarTerremotosMapa" id="fWB-hO-czN"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -83,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="2956" y="133.5832083958021"/>
         </scene>
-        <!--Info Earth Quake View Controller-->
+        <!--Detailed info-->
         <scene sceneID="p3h-SB-Oqo">
             <objects>
                 <viewController id="FNI-IT-nl2" customClass="InfoEarthQuakeViewController" customModule="GeoEarthQuake" customModuleProvider="target" sceneMemberID="viewController">
@@ -159,6 +164,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mpx-U5-VcQ"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Detailed info" id="tu2-xo-hsJ">
+                        <barButtonItem key="rightBarButtonItem" title="Map" id="S1a-W3-ikr">
+                            <connections>
+                                <segue destination="i5Z-eO-2E2" kind="show" identifier="mostrarMapaTerremoto" id="Ne2-V4-R5o"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="coordinates" destination="Kms-Gr-viT" id="Rk0-th-8OZ"/>
                         <outlet property="depth" destination="CUB-Nc-Yg0" id="UCC-A5-zcq"/>
@@ -173,6 +185,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OqA-BQ-DUP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3792.8000000000002" y="133.5832083958021"/>
+        </scene>
+        <!--Mapa View Controller-->
+        <scene sceneID="a1w-oY-Krf">
+            <objects>
+                <viewController id="i5Z-eO-2E2" customClass="MapaViewController" customModule="GeoEarthQuake" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wnO-2P-prh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="O2A-eo-WxO">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KpH-Xb-Jth" firstAttribute="bottom" secondItem="O2A-eo-WxO" secondAttribute="bottom" id="BHO-2k-DCe"/>
+                            <constraint firstItem="KpH-Xb-Jth" firstAttribute="trailing" secondItem="O2A-eo-WxO" secondAttribute="trailing" id="es7-Ov-cm4"/>
+                            <constraint firstItem="O2A-eo-WxO" firstAttribute="leading" secondItem="KpH-Xb-Jth" secondAttribute="leading" id="gj8-lB-Prq"/>
+                            <constraint firstItem="O2A-eo-WxO" firstAttribute="top" secondItem="KpH-Xb-Jth" secondAttribute="top" id="u3z-GU-n83"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KpH-Xb-Jth"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="O2A-eo-WxO" id="C6R-Zo-rmg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBW-iJ-lVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4617" y="134"/>
         </scene>
         <!--Item-->
         <scene sceneID="yJf-no-DRs">
@@ -199,4 +240,7 @@
             <point key="canvasLocation" x="2016.8" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fWB-hO-czN"/>
+    </inferredMetricsTieBreakers>
 </document>
